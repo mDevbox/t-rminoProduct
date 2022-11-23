@@ -1,0 +1,135 @@
+{% load static %}
+
+<div class="content-flex">
+    <div class="imgflex">
+       <img class="opacityImg" src="{% static 'southbike/img/southbikeBlack.png' %}" alt="">
+    </div>
+    <div class="bars-content">
+        <span></span>
+    </div>
+    <div class="registered">
+        <i class="fas fa-biking"></i>
+    </div>
+</div>
+
+<div class="filterUrbans">
+  <div class="filter">
+    <div class="iconFilter">
+      <i class="bi bi-funnel-fill"></i>
+    </div>
+    <div>
+      <a href="#freeride26">Freeride - 26</a>
+    </div>
+  </div>
+</div>
+
+<div class="models-box">
+    <div class="models">
+        <div class="models-bicycle-details">
+            <div id="freeride26">
+<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModalFreeride">
+    <img src="{% static 'southbike/img/freeridenewwhite.png' %}" class="img-fluid" alt="...">
+</button>
+  <div class="modal fade" id="exampleModalFreeride" tabindex="-1" aria-labelledby="exampleModalFreeride" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleFreerideLabel">Freeride</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="carouselExampleFreeride" class="carousel slide cardBlockCarrousel" data-bs-ride="true">
+                <div class="carousel-indicators buttonCard">
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="0" class="active white" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="1" class="white" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="2" class="black" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="3" class="black" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="4" class="black" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="5" class="green" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide-to="6" class="orange" aria-label="Slide 7"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'southbike/img/freeridenewwhite.png' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/Freeride.png' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/freerideblack.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/freeridenew.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/freeridenew1.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/freeridenewgreen.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'southbike/img/freerideorange.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFreeride" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+        </div>
+
+<div class="colorPalleta">
+            <section class="detailsGear">
+                <div class="radiusDown">
+                    <a href="#"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+                </div>
+<div class="radiusGear">        
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFreerideGear">
+    <i class="bi bi-gear"></i>
+  </button>
+</div>
+  <div class="modal fade" id="exampleModalFreerideGear" tabindex="-1" aria-labelledby="exampleFreerideLabelGear" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalFreerideGear">Especificidade <span class="bi bi-gear"></span></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modayGear">
+          <p> <strong>Freeride </strong>- Aro 26 - 3x7 Marchas - Freios a Disco</p> 
+          <p><strong>Modalidade:</strong> BICICLETA</p>
+          <p><strong>Aro:</strong> 26</p> 
+          <p><strong>Marcha:</strong> 21</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="flexPalleta">
+            <div>
+                <i class="bi bi-palette-fill"></i>
+            </div>
+                <div>
+                    <div class="circleColor orange"></div>
+                    <div class="circleColor black"></div>
+                    <div class="circleColor white"></div>
+                    <div class="circleColor green"></div>
+                </div>
+        </section>
+        <section>
+            <div>
+                <p>Cores Disponíveis</p>
+            </div>
+        </section>
+</div>
+    </div>
+    </div>

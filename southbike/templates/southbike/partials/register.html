@@ -1,0 +1,105 @@
+{% load static %}
+
+<section class="section-box-registre">
+    <section class="section-flex-registre">
+            <div class="div-box-flex">
+                <div class="content-flex">
+                    <div class="imgflex">
+                       <img class="opacityImg" src="{% static 'southbike/img/southbikeBlack.png' %}" alt="">
+                    </div>
+                    <div class="bars-content">
+                        <span></span>
+                    </div>
+                    <div class="registered">
+                        <i class="far fa-registered"></i>
+                    </div>
+                </div>
+                <div class="flexBlockRegister">
+                    <div class="block1Register blockone">
+                        <h1>Registre Sua Bicicleta</h1>
+                        <p>Disponha de alguns minutos para registrar a sua bicicleta. isso nos permite entrar em contato caso alguma situação 
+                        venha á acontecer com a sua bicicleta. Também, você terá salvo o serial de sua bicicleta em caso de roubo, furto ou 
+                        solicitações de garantia. Caso tenha alguma outra dúvida, entre em contato conosco.</p>
+                        <h1>Número de Série</h1>
+                        <p>Você pode encontrar o número de série ou chassi de seu quadro abaixo do movimento central, normalmente descrito com 
+                        duas letras e uma sequência de números</p>
+                        <img class="chassi" src="{% static 'southbike/img/Chassi.png' %}" alt="">
+                    </div>
+                    <div class="block1Register">
+                        <h1>Registre</h1>
+                        <form id="formRegister" action="#" method="POST">
+                            <div class="infoId">
+                                <h3>Nome Completo:</h3>
+                                <label id="name" for="name">
+                                    <input type="text" name="name" id="name" placeholder="Maicon Santos" required="value">
+                                    <i class="fas fa-user"></i>
+                                </label>
+                            </div>
+                            <div class="information">
+                                <div class="infoId">
+                                    <h3>Telefone:</h3>
+                                    <label id="name" for="tel">
+                                        <input type="tel" name="tel" id="name" placeholder="-- - ----- -----" required="value">
+                                        <i class="fas fa-phone"></i>
+                                    </label>
+                                </div>
+                                <div class="infoId">
+                                    <h3>CPF / CNPJ:</h3>
+                                    <label id="name" for="number">
+                                        <input type="number" name="cpf" id="name" placeholder="---.---.--0-0- / --.---.---/----0-0-" required="value">
+                                        <i class="fas fa-id-card-alt"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="infoId">
+                                <h3>Email: </h3>
+                                <label id="name" for="name">
+                                    <input type="email" name="name" id="name" placeholder="maicon.santos@gmail.com" required="value">
+                                    <i class="fas fa-envelope"></i>
+                                </label>
+                            </div>
+                            <div class="information">
+                                <div class="infoId">
+                                    <h3>Localização:</h3>
+                                    <label id="name" for="tel">
+                                        <input type="text" name="tel" id="name" placeholder="Estr. Pres. Lucena, Primavera, Novo Hamburgo" required="value">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </label>
+                                </div>
+                                <div class="infoId">
+                                    <h3>Data:</h3>
+                                    <label id="name" for="number">
+                                        <input type="number" name="cpf" id="name" placeholder="--/--/----" required="value">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="infoId">
+                                <h3>Chave Da Nota Fiscal:</h3>
+                                <label id="name" for="name">
+                                    <input type="number" name="name" id="name" placeholder="---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----" required="value">
+                                    <i class="fas fa-key"></i>
+                                </label>
+                            </div>
+                            <div class="information">
+                                <div class="infoId">
+                                    <h3>Modelo Da Bicicleta</h3>
+                                    <label id="name" for="tel">
+                                        <input type="text" name="tel" id="name" placeholder="Legend" required="value">
+                                        <i class="fas fa-bicycle"></i>
+                                    </label>
+                                </div>
+                                <div class="infoId">
+                                    <h3>Número Do Chassi</h3>
+                                    <label id="name" for="number">
+                                        <input type="number" name="cpf" id="name" placeholder="-- --- ---" required="value">
+                                        <i class="fas fa-cogs"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="buttonRegister"><span>Enviar</span> <i class="fas fa-share"></i></button>     
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>

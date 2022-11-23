@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- Linguagem -->
+<html lang="pt-br">
+
+<!-- Informações do site -->
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    {% include 'southbike/partials/head.html'%}
+</head>
+
+<!-- Corpo do website -->
+<body>
+    <div class="sub">
+     <a href="#header-box"><i class="bi bi-caret-up-fill"></i></a>
+     <a href="#footer"><i class="bi bi-caret-up-fill"></i></a>
+    </div>
+    {% include 'southbike/partials/header.html' %}
+    <main id="main-content-southbike">
+        {% block content %}
+            <!-- Content Block -->
+        {% endblock content %}
+    </main>
+    {% include 'southbike/partials/footer.html' %}
+</body>
+
+
+</html>

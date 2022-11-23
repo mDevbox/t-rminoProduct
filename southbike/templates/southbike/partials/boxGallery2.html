@@ -1,0 +1,91 @@
+{% load static %}
+
+<div class="content-flex">
+    <div class="imgflex">
+       <img class="opacityImg" src="{% static 'southbike/img/southbikeBlack.png' %}" alt="">
+    </div>
+    <div class="bars-content">
+        <span></span>
+    </div>
+    <div class="registered">
+        <i class="bi bi-images"></i>
+    </div>
+</div>
+<div class="container-gallery-center">
+    <div class="container-gallery">
+        <div class="gallery-box">
+            <div>
+                <div class="galleryfull">
+                    <img src="{% static 'southbike/img/gallery30.jpg' %}" class="img-fluid" alt="...">
+                </div>
+                <div class="gallerysmool">
+                    <div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery31.jpg' %}" class="img-thumbnail" alt="...">
+                    </div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery32.jpg' %}" class="img-thumbnail" alt="...">
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="galleryfull">
+                    <img src="{% static 'southbike/img/gallery33.jpg' %}" class="img-fluid" alt="...">
+                </div>
+                <div class="gallerysmool">
+                    <div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery32.jpg' %}" class="img-thumbnail" alt="...">
+                    </div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery33.jpg' %}" class="img-thumbnail" alt="...">
+                    </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <div>
+                <div class="galleryfull">
+                    <img src="{% static 'southbike/img/gallery34.jpg' %}" class="img-fluid" alt="...">
+                </div>
+                <div class="gallerysmool">
+                    <div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery35.jpg' %}" class="img-thumbnail" alt="...">
+                    </div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery36.jpg' %}" class="img-thumbnail" alt="...">
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="galleryfull">
+                    <img src="{% static 'southbike/img/gallery37.jpg' %}" class="img-fluid" alt="...">
+                </div>
+                <div class="gallerysmool">
+                    <div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery38.jpg' %}" class="img-thumbnail" alt="...">
+                    </div>
+                    <div>
+                        <img src="{% static 'southbike/img/gallery39.jpg' %}" class="img-thumbnail" alt="...">
+                    </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<div class="container-gallery-center">
+    <div class="container-gallery">
+    <nav aria-label="target-two">
+    <ul class="pagination pagination-sm">
+      <li class="page-item"><a class="page-link" href="{% url 'southbike-gallery' 'page=1' %}">1</a></li>
+      <li class="page-item"><a class="page-link" href="{% url 'southbike-gallery-one' 'page=2' %}">2</a></li>
+    </ul>
+  </nav>
+</div>
+</div>

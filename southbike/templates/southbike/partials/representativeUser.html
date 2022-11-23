@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="user-container">
+    <div class="user">
+        <div class="block-user user-img">
+           <img src="{% static 'southbike/img/southbike.png' %}" alt="logo south bike">
+            <!-- Background image -->
+        </div>
+        <div class="block-user input-block">
+            <div class="block-user-box">
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                    <h1>Bem vindo (a)</h1>
+                    <p>Informe seus dados abaixo: </p>
+                </div>
+                <div class="user-input">
+                    <form action="/" method="POST">
+                        <div class="user-block">
+                            <label for="text">Usuário:<br> 
+                                <input type="text" name="string" id="user" placeholder="Coloque seu usuário: ">    
+                                <i class="fas fa-user"></i>
+                            </label> 
+                        </div>
+                        <div class="user-block">
+                            <label for="text">Senha:<br> 
+                                <input type="password" name="string" id="user" placeholder="Coloque seu usuário: ">
+                                <i class="fas fa-lock"></i>
+                            </label> 
+                        </div>
+                        <input type="submit" value="Continuar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

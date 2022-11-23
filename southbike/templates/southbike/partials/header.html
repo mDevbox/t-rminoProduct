@@ -1,0 +1,90 @@
+{% load static %}
+
+<header id="header-box">
+    <section id="section-box">
+        <div class="blockOne">
+          
+            <button class="btn mobile btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <i class="bi bi-list"></i>
+              </button>
+              
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                   <nav class="link">
+                    <ul class="nav-link">
+                    <a href="{% url 'southbike-home' %}"><li>Home</li></a>    
+                    <a href="{% url 'southbike-company' 'empresa_southbike' %}"><li>Empresa</li></a>    
+                    <a href="#product"><li>Produtos</li></a>    
+                    <a href="{% url 'southbike-gallery' 'galeria_southbike' %}"><li>Galeria</li></a>    
+                    <a href="#contact"><li>Contato</li></a>   
+                        <span class="painel">
+                        <a href="#"><li><i class="fas fa-users"></i>Painel</li></a>    
+                        <a href="#"><li><i class="fas fa-bicycle"></i>Registre Sua Bicicleta</li></a>    
+                        </span>
+                    </ul>
+                   </nav>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="barsBoxMobile">
+            <div class="barsMobile">
+                    <div class="barsOneMobile">
+                    
+                    </div>
+                    <div class="barsTwoMobile">
+
+                    </div>
+                    <div class="barsThreeMobile">
+                        
+                    </div>
+                    <div class="barsFourMobile">
+                        
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="logoOne">
+            <a href=" {% url 'southbike-home' %} "><img src="{% static 'southbike/img/southbikeBlack.png' %}" alt="Logo SouthBike"></a>  
+            </div>
+            <div class="barsCenter">
+            <div class="bars">
+                <div class="barsOne">
+                  
+                </div>
+                <div class="barsTwo">
+                
+                </div>
+                <div class="barsThree">
+                    
+                </div>
+                <div class="barsFour">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        <nav class="blockTwo">
+            <div class="navbarOne">
+                <ul class="flexOne">
+                    <li><a href="{% url 'southbike-representative' 'representante_southbike' %}"><i class="fas fa-users"></i>Painel</a></li>
+                    <li><a href="{% url 'southbike-registre-sua-bicicleta' 'registre_sua_bicicleta' %}"><i class="fas fa-bicycle"></i>Registre sua Bicicleta</a></li>
+                    <li><span class="sun" onclick="MySun()"><i class="fa-solid fa-circle-half-stroke"></i>Modo Light</li></span>
+                </ul>
+            </div>
+            <div class="navbarTwo">
+                <ul class="flexTwo">
+                    <li><a href="{% url 'southbike-home' %}">Home</a></li>
+                    <li><a href="{% url 'southbike-company' 'empresa_southbike' %}">Empresa</a></li>
+                    <li><a href="#product">Produtos</a></li>
+                    <li><a href="{% url 'southbike-gallery' 'galeria_southbike' %}">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</header>

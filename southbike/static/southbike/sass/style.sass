@@ -1,0 +1,1801 @@
+// Reset
+    
+*
+    list-style: none
+    margin: 0
+    padding: 0
+    text-decoration: none
+    font-family:  'Helvetica South'
+    box-sizing: border-box
+  
+// Font do Website
+
+@font-face 
+    font-family: 'Helvetica South'
+    src: ('southbike/Font/Helvetica.ttf')
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+/* Firefox */
+input[type=number]
+  -moz-appearance: textfield
+
+// remove date
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator 
+    display: none
+    -webkit-appearance: none
+
+// Scrollbars
+
+body::-webkit-scrollbar
+    width: .6em
+   
+body::-webkit-scrollbar-track
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.59)
+   
+body::-webkit-scrollbar-thumb
+    background-color: rgba(133, 133, 133, 0.483)
+    outline: 1px solid rgba(0, 0, 0, 0.138)
+    border-radius: 5rem
+
+// Dark mode
+
+.dark
+    background-image: linear-gradient(45deg, gray,  #0000006b)
+
+.dark header
+   background-color: #555555
+
+.dark a
+    color: white !important
+
+.dark 
+   color: white !important
+
+.dark:hover
+    
+
+.dark .card-models-box
+    background: #757575bd
+
+.dark .block1
+    background: #acacacc7
+    box-shadow: none !important
+
+.dark .block1 h1
+    color: white !important
+
+.dark .block1 a
+    color: white !important
+    border: 1px solid #6d6d6d82 !important
+
+.dark 
+    color: white !important
+
+// Sub    
+
+.sub
+    position: fixed
+    right: -1rem
+    margin: 0 1rem
+    z-index: 999
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    background-image: linear-gradient(45deg, #6e6e6e, #858585)
+    justify-content: flex-end
+    height: 5.3rem
+    padding: .5rem
+    transform: translateY(10rem)
+    border-top-left-radius: 30px 
+    opacity: .5
+    border-bottom-left-radius: 30px 
+
+.sub i
+    font-size: 1.5rem
+    color: black
+
+.sub a:nth-child(2)
+    transform: rotate(180deg)
+
+// Config Header 
+
+#header-box
+    height: 100px
+    display: flex
+    justify-content: center
+    font-size: 12px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.122)
+
+#section-box
+    width: 1200px
+    display: flex   
+
+.blockOne
+    height:100px
+    display: flex
+    flex: 1
+
+.logoOne
+    height: 100px
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 1
+    transform: translateY(-1rem)
+
+.logoOne img
+    width:  fit-content
+    height: 70px
+    opacity: .5
+
+.barsCenter
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.bars
+    height: 90px
+    display: flex
+    flex-direction: column
+
+.barsOne
+    background-color: #adadad7b
+    width: 0.2px
+    flex: 2
+    transform: translateY(4px)
+
+.barsTwo
+    background-color: #adadad7b
+    width: 0.2px
+    flex: 1
+    transform: rotate(-45deg)
+    margin-left: 6px
+    margin-top: 2px
+
+.barsThree
+    background-color: #adadad7b
+    width: 0.2px
+    flex: 1
+    transform: rotate(-135deg)
+    margin-left: 6px
+    margin-top: -5px
+
+.barsFour
+    background-color: #adadad7b
+    width: 0.2px
+    flex: 2
+    transform: translateY(-2px)
+
+.sun
+    color: black
+    cursor: pointer
+
+.sun:hover
+    color: #0d6efd
+
+.blockTwo
+    flex: 1.5
+    height: 100px
+    display: flex
+    flex-direction: column
+
+.navbarOne
+    flex: 1
+
+.navbarTwo
+    flex: 1
+
+.cardBotton
+    background-color: transparent !important
+
+.flexOne
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 50px
+
+.flexOne i
+    margin-right: 10px
+
+.flexTwo
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 30px
+
+.flexOne a, .flexTwo a
+    font-size: .8rem
+    text-decoration: none
+
+.mobile, .offcanvas
+    display: none
+
+.barsMobile
+    display: none
+
+.categoryOne
+    background-color: #BFBFBF !important
+
+// Mobile First 
+
+@media (max-width: 700px)
+   
+    .mobile
+        display: block
+        width: 20% !important
+        background-color: transparent !important
+
+    .filter
+        display: flex
+        flex-direction: column
+        border: none !important
+        gap: 0 !important
+
+    .iconFilter
+        width: 100%
+        text-align: center
+
+    .filter div:nth-child(2)
+        padding-right: 0 !important
+
+    .filter div:nth-child(2) a
+        display: flex
+        flex-direction: column
+        border: 1px solid #B4B4B4
+        transform: translateY(.9rem)
+
+    .offcanvas
+        display: block
+        background-color: rgba(255, 255, 255, 0.932)
+        margin-top: 6.3rem
+        overflow: scroll 
+
+    .mobile i
+        font-size: 2.5rem
+
+    .btn, .btn-primary
+        cursor: default !important
+        display: block
+    
+    .btn-primary
+        box-shadow: none !important
+
+    .btn-primary:active, .mobile:active
+        box-shadow: none !important
+
+    .btn-close:active
+        box-shadow: none !important
+
+    .btn-close, .btn-clode:focus
+        background-color: transparent !important
+        box-shadow: none !important
+        opacity: none !important
+
+    .offcanvas-backdrop
+        background-color: transparent !important
+
+    .offcanvas-body .nav-link li
+        margin-bottom: 1rem
+        font-size: .9rem
+
+    .nav-link li:hover
+        color: #0d6efd
+
+    .painel i
+        margin-right: 1rem
+
+    .barsBoxMobile
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 10px
+
+    .barsMobile
+        display: block
+        height: 80px
+        display: flex
+        flex-direction: column
+
+    .barsOneMobile
+        background-color: #adadad7b
+        width: 0.2px
+        flex: 2
+        transform: translateY(2px)
+
+    .barsTwoMobile
+        background-color: #adadad7b
+        width: 0.2px
+        flex: 1
+        transform: rotate(40deg)
+        margin-left: -5px
+
+    .barsThreeMobile
+        background-color: #adadad7b
+        width: 0.2px
+        flex: 1
+        transform: rotate(140deg)
+        margin-left: -4px
+        margin-top: -5px
+
+    .barsFourMobile
+        background-color: #adadad7b
+        width: 0.2px
+        flex: 2
+        transform: translateY(-1px)
+
+    .bars
+        display: none
+
+    .blockTwo
+        display: none
+
+@media (max-width: 400px)
+
+    .barsBoxMobile
+        display: none
+
+@media (max-width: 375px)
+
+    .logoOne img
+        width: 200px
+        height: 70px
+
+@media (max-width: 350px)
+    .logoOne img
+        width: 150px
+        height: 50px
+
+// Models cardslider
+// Caroussel 
+
+#carouselExampleIndicators
+    width: 37rem
+    height: 40rem
+
+.cardShowModels
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    overflow: hidden
+
+#transitionLegend2801
+    display: flex
+    flex-wrap: wrap
+    gap: .5rem
+
+#transitionlegend2374
+    display: flex
+    flex-wrap: wrap
+    gap: .5rem
+
+.container-block
+    display: flex
+    justify-content: center
+    border: 1px solid red
+
+.contianer-block-flex
+    border: 1px solid blue
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    overflow: hidden
+
+#modayGear
+    height: auto !important
+
+.cardmodels
+    width: 100%
+    position: absolute
+    background-color: transparent
+
+.cardmodels img
+    height: auto
+    transform: translateY(-5px)
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 35rem
+
+.models-button > button
+    height: 1.5rem !important
+    width: 10rem !important
+    background-color: gray !important
+    opacity: .5px !important
+    transform: translateY(1rem)
+    overflow: hidden !important
+
+.carousel
+    display: flex
+    justify-content: center
+    align-items: center
+
+// product southbike 
+
+.card-img-top
+    height: 9rem
+
+.product-grid-top
+    margin-top: 7rem
+
+.section-grid
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: .5rem
+
+.product-grid
+    display: flex
+    gap: 1rem
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+#categoryOne
+    width: 100%
+    height: 5rem
+    background-color: rgba(143, 143, 143, 0.279) !important
+    border: none
+    transition: 300ms ease-in-out
+    color: black
+
+#categoryOne:hover
+    color: white !important
+    
+.btn:hover
+    background-color: rgb(197, 197, 197)
+    cursor: pointer
+
+.btn
+    border: none !important
+    color: black
+
+.mobile .btn:active
+    background-color: transparent !important
+
+.card-text
+    text-align: center
+    font-size: 1.5rem
+
+.card
+    padding: .8rem
+    background-color: rgba(255, 255, 255, 0.685)
+    border-top-left-radius: 5px
+    border-top-rigth-radius: 5px
+    border-bottom-left-radius: 0px !important
+    border-bottom-right-radius: 0px !important
+
+.card-text
+    opacity: .5
+
+.modal-header
+    color: black
+    z-index: 1
+    overflow: hidden
+    box-shadow: none
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233)
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+.modal-content
+    border: none
+
+.modal-body div h1
+    text-align: center
+
+.modal-body
+    display: flex
+    line-height: 2
+    flex-wrap: wrap
+    justify-content: center
+    position: relative
+    color: black
+    overflow: hidden
+    border: none
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+    flex-direction: column
+    height: 50rem !important
+
+.modal-body i
+    position: absolute
+    top: 1rem
+    left: 1rem
+    font-size: 2rem
+    color: black
+
+.modal-body div a
+    display: flex
+    flex-direction: column
+    padding: 1rem
+    color: black
+    text-decoration: none
+
+.x_close
+    color: black
+    font-size: 2rem
+    background-color: transparent
+    border: none
+
+.box-models
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.box-models div
+    margin: 0 auto
+
+.box-models div a
+    font-size: .9rem
+
+.box-models div, a, h1
+    font-size: .9em
+
+.box-models div a:hover
+    color: #0d6efd
+
+.category h1
+    color: black
+    opacity: .7
+    border-bottom: 1px solid
+    width: fit-content
+    margin: 0 auto
+
+/* Product-Char */
+
+.product-char
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+.product-char-gear
+    background-image: url(../img/AZUL-1\ 1.png)
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    width: 30rem
+    height: 40rem
+    background-color: #BFBFBF
+    transform: translateY(-.5rem)
+    padding: 0 3rem
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    margin-left: .5rem
+    border-top-left-radius: 10%
+    border-bottom-right-radius: 25%
+    border-top-right-radius: 1%
+    border-bottom-left-radius: 1%
+
+.white-char h1
+    font-size: 1rem
+    text-align: center
+    font-weight: bold
+
+.white-char
+    background-color: rgba(255, 255, 255, 0.845)
+    height: 34rem
+    padding: 1rem
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+.white-char .italic-bike
+    font-style: italic
+
+.white-char h3
+    font-size: 1rem
+
+.white-char
+    font-size: .8rem
+
+@media (max-width: 1280px)
+    .models
+        padding: 1rem
+        width: 500px !important
+        margin: 3rem
+
+@media (max-width: 1200px)
+    .product-char-gear
+        display: none
+
+@media (max-width: 650px)
+    .models
+        padding: 1rem
+        width: 500px !important
+        margin: 3rem
+
+@media (max-width: 500px)
+    .models
+        padding: 1rem
+        width: 400px !important
+        margin: 3rem
+
+@media (max-width: 450px)
+    .models
+        padding: 1rem
+        width: 350px !important
+        margin: 3rem
+
+@media (max-width: 350px)
+    .models
+        padding: 1rem
+        width: 280px !important
+        margin: 3rem
+
+/* gallery/industry south */
+
+.box-cards
+    display: flex
+    justify-content: center
+    margin-top: 7rem
+
+.box-gallery-industry
+    display: flex
+    gap: 5rem
+    transform: translateX(.3rem)
+
+.card-industry
+    width: 640px
+    background-color: #BFBFBF
+    border-top-left-radius: 10%
+    border-bottom-right-radius: 25%
+    border-top-right-radius: 1%
+    border-bottom-left-radius: 1%
+    overflow: hidden
+
+.btn-close, .btn-close:focus
+    box-shadow: none !important
+    background-color: none !important
+
+
+// gear / caroussel
+
+.buttonCard 
+   width: fit-content
+   padding: .5rem
+   margin: 0 auto
+   transform: translateY(80px)
+
+.buttonCard button
+    border-radius: 50%
+    width: 1.5rem !important
+    height: 1.5rem !important
+    margin: 0 .3rem !important
+    transform: translateY(-1rem)
+
+.colorPalleta
+    margin: 1rem 0
+    gap: 1rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-bottom: 1px solid #00000010
+    border-radius: 5px
+
+.colorPalleta i
+    padding: .5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 2.1rem
+
+.flexPalleta div i
+    background-color: #b9b9b9
+    opacity: .5
+
+.detailsGear
+    display: flex
+    gap: 1rem
+
+.flexPalleta
+    display: flex
+    justify-content: center
+    align-self: center
+    gap: 1rem 
+    border: 1px solid #d9d9d9
+    border-radius: 5px
+    overflow: hidden
+
+.radiusDown
+    border-radius: 50%
+    opacity: .5
+    border: 1px solid #909294
+    
+.radiusDown i
+    font-size: 1.2rem
+    color: gray !important
+
+.radiusGear
+    border-radius: 50%
+    opacity: .5
+    border: 1px solid #909294
+
+.flexPalleta div:nth-child(2)
+    display: flex
+    align-self: center
+    justify-content: center
+    gap: 1rem
+    padding: .5rem
+
+.card-industry
+    background-image: url(../img/485008.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: flex-end   
+
+.card-industry div
+    width: 30rem
+    height: 56rem
+    background-color: rgba(255, 255, 255, 0.459)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.card-industry img
+    opacity: .5
+    width: 30rem
+    height: 8rem
+
+.card-industry div svg
+    width: 5rem
+    height: 5rem
+    opacity: .5
+
+.btn, .btn-primary, .categoryOne
+    border-top-left-radius: 0px !important
+    border-top-right-radius: 0px !important
+
+.btn
+    padding: 0 !important
+
+.box-cardsslider-central
+    display: flex
+    flex-direction: column
+    gap: 30px
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+.block1
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    box-shadow: 0 0 5px #cfcfcf
+
+.block1 div:nth-child(1) img
+    opacity: .5
+
+.block1 div:nth-child(1)
+    background-image: url(../img/industry.png)
+    height: 20rem
+    width: 23rem
+    background-repeat: no-repeat
+    background-size: cover
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-position: center
+
+.block1 div:nth-child(2)
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 7rem
+    border-bottom-left-radius:  10px
+    border-bottom-right-radius:  10px
+
+.block1  div:nth-child(2) h1, a
+    color: black
+    opacity: .7
+    font-weight: normal
+    transform: translateY(18px)
+    text-decoration: none
+
+.block1  div:nth-child(2) a
+    padding: .5rem
+    border-radius: 5px
+    border: 1px solid #99999979
+    color: black
+
+.block1  div:nth-child(2) a:hover
+    background-color: rgba(128, 128, 128, 0.411)
+
+.block1 div.back
+    background-image: url(../img/gallery.png)
+
+@media (max-width: 1200px)
+    .card-industry
+        display: none
+
+    .box-gallery-industry
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .box-cardsslider-central
+        display: flex
+
+@media (max-width: 430px)
+    .sobre
+        display: block
+    
+    .sobre div.block1
+        margin-bottom: 30px
+
+@media (max-width: 360px)
+    .block1 div:nth-child(1)
+        height: 15rem
+        width: 18rem
+    
+    .block1 img
+        width: 15rem
+
+@media (max-width: 280px)
+    .block1 div:nth-child(1)
+        height: 12rem
+        width: 15rem
+
+    .block1 img
+        width: 10rem
+
+// btn
+
+#gearButton
+    border-bottom: 1px solid #00000034 !important
+    border-top-right-radius: 15px
+    border-bottom-left-radius: 20px
+    transform: translateX(-.2rem)
+    cursor: pointer
+
+.btn-primary    
+    background-color: transparent !important
+    box-shadow: none !important
+    color: #727272 !important
+
+.btn-primary:hover
+    color: none !important
+
+// contact southbike 
+
+.section-box-contact
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 7rem
+
+.section-box
+    display: flex
+    width: 1107px
+    justify-content: center
+    transform: translateX(-.3rem)
+
+.block-contact
+    flex: 1
+
+.block-input
+    flex: 1.5
+    transform: translateY(10px)
+    line-height: 1.5
+
+.contact-banner
+    flex: .8
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.502), rgba(128, 128, 128, 0.502))
+    height: 28.2rem
+    transform: translateY(1.3rem)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    border-top-left-radius: 10%
+    border-bottom-right-radius: 25%
+    border-top-right-radius: 1%
+    border-bottom-left-radius: 1%
+
+.contact-banner img
+    width: 15rem
+    opacity: .8
+
+
+.contact-banner svg
+    width: 3rem
+    height: 3rem
+    opacity: .5
+
+.address
+    margin: 1rem
+    padding: 1.5rem
+    display: flex
+    box-shadow: 0px 0px 2.5px rgb(0, 0, 0)
+    color: black
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    height: 8.8rem
+    opacity: .7
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.502), rgba(128, 128, 128, 0.502))
+
+.address h1
+    font-size: 1rem
+    font-weight: bold
+
+.address p
+    font-size: .8rem
+    margin-bottom: .5rem
+    transform: translateY(.5rem)
+
+.address div:nth-child(1)
+    flex: 1
+    font-size: 14px
+
+.address div:nth-child(2)
+    font-size: 1.5rem
+
+.flex-contact
+    display: flex
+    gap: 15px
+    margin: 1rem 0
+    color: black
+
+.flex-email-phone
+    background-color: #acacac4f
+    padding: .5rem 1.3rem
+    border-radius: 1.2rem
+    border: 1px solid transparent
+    flex: 1
+
+.flex-email-phone p
+    margin-bottom: .3rem
+
+.input-phone-email
+    display: flex
+
+.flex-contact input
+    width: 100%
+    background-color: transparent
+    border: none
+    outline: none
+
+.flex-Textarea
+    background-color: #acacac4f
+    width: 100%
+    transform: translateY(10px)   
+    padding: .9rem
+    border-radius: .5rem
+
+.flex-Textarea textarea
+    background-color: transparent
+    outline: none
+    border: none
+    width: 100%
+    height: 100%
+    height: 5.6rem
+    margin-top: -.5rem
+
+.fullname
+    background-color: #acacac4f
+    padding: .5rem 1.3rem
+    border-radius: 1.2rem
+    color: black
+
+.fullname input
+    width: 100%
+    background-color: transparent
+    border: none
+    outline: none
+
+.fullname p
+    margin-bottom: .2rem
+
+.buttonContact
+    width: 100%
+    transform: translateY(17.5px)
+    background-color: #acacac4f
+    border: none
+    border-radius: 50rem
+    padding: .2rem
+
+#form-contact
+    font-size: .8rem
+    padding: 1rem
+
+.form-flex
+    transform: translateY(-10px)
+
+::placeholder
+    font-size: .8rem
+    color: black
+    font-style: normal
+    opacity: .5
+
+#labelText
+    display: flex
+
+#labelText > i
+    padding: .3rem
+    opacity: .7
+
+textarea
+    font-family: 'Helvetica South'
+
+input[type="radio"]
+    appearance: none
+    width: .8rem
+    height: .8rem
+    border-radius: 50%
+    opacity: .5
+    border: 1px solid
+    padding: .4rem
+    transition: 500ms ease-in-out
+
+input[type="radio"]:checked
+    background-color: black
+    width: .8rem
+    height: .8rem
+
+@media (max-width: 1200px)
+    .contact-banner
+        display: none
+
+@media (max-width: 800px)
+    .section-box
+        display: flex
+        flex-direction: column
+        margin-bottom: 2.5rem
+
+    .flex-contact
+        display: flex
+        flex-direction: column
+        gap: 1rem
+
+    .address
+        height: 10rem
+
+    .address p
+        transform: translateY(1.2rem)
+
+@media (max-width: 500px)
+    .section-box
+        display: block
+
+// footer 
+
+.footer-box
+    font-size: 13.5px
+    color: black
+    margin-top: 7rem
+    border-top: 1px solid rgba(0, 0, 0, 0.122)
+
+.section-main
+    padding: 2rem
+
+.div-info-footer
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    font-size: 1rem
+
+.div-info-footer div:nth-child(1)
+    display: flex
+    gap: 20px
+    flex-flow: row wrap
+    transform: translateY(-20px)
+
+.div-info-footer a:hover
+    color: #0d6efd
+
+.div-socials-footer div
+    text-align: center
+
+.div-info-footer div a
+    color: black
+
+.div-info-footer div img
+     opacity: .5
+
+.div-socials-footer div:nth-child(1)
+    font-size: 30px
+    padding-bottom: 10px
+
+.div-socials-footer div a
+    color: black
+
+.div-socials-footer span:hover
+    color: #0d6efd
+
+.div-info-footer div a
+    text-decoration: none
+
+@media (max-width: 750px)
+    .div-info-footer
+        display: flex
+        flex-direction: column
+
+    .div-info-footer div img:nth-child(1)
+        width: 250px
+
+    .div-info-footer div:nth-child(1)
+        transform: translateY(-5px)
+
+@media (max-width: 350px)
+    .div-info-footer div:nth-child(1)
+        display: block
+
+    .div-info-footer a
+        padding: 1rem
+        text-align: center
+
+// company
+
+.industry-southbike
+    margin-top: 2rem
+
+#urbans, #freeride, #infantil, #mbt
+    height: auto !important
+
+
+
+.bars-content span
+    background-color: black
+    width: .1rem
+    height: 12rem
+
+.content-flex
+    display: flex
+    align-items: center
+    background-color: #7e7c7cc5
+    padding: 5rem
+
+.content-flex div
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+
+.div-box-flex
+    display: flex
+    flex-direction: column
+
+.content-flex i
+    font-size: 5rem
+
+.flex-industry
+    display: flex
+    flex-direction: column
+    margin: 2rem
+
+.flex-industry p, h1
+    color: black
+
+.industry-block
+    display: flex
+    gap: 1rem
+    text-align: justify
+    line-height: 1.5
+    color: white
+    font-size: .9rem
+    margin-bottom: 4rem
+
+.industry-block div p
+    margin-bottom: 1rem
+
+.industry-central h1
+    width: fit-content
+    transform: translateX(2rem)
+    margin-top: 2.5rem
+    color: white
+    font-weight: normal
+    font-size: 1rem
+    color: black
+
+.imgflex img
+    transform: translateY(-.5rem)
+
+.cardShow
+    width: 70%
+    margin: 0 auto
+    border-radius: 5px
+    overflow: hidden
+
+@media (max-width: 900px)
+    .content-flex
+        display: flex
+        flex-direction: column
+
+    .modal-body
+        height: 27rem !important
+    
+    .bars-content span
+        display: none 
+    
+    .industry-block
+        display: block
+
+    .cardShow
+        width: 100%
+
+@media (max-width: 320px)
+    .imgflex img
+        width: 250px
+
+.user-container
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+.user
+    display: flex
+    padding: 2rem
+    overflow: hidden
+    
+.block-user
+    flex: 1
+    display: flex
+    align-items: center
+    justify-content: center
+
+.user-img
+    background-image: url(../img/mbikesouth1.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 35rem
+    width: 50rem
+
+.user-icon
+    display: flex
+    flex-direction: column
+    color: black
+    opacity: .7
+
+.user-icon h1
+    margin-top: 2rem
+
+.user-icon i
+    font-size: 4rem
+    margin: 0 auto
+
+.logouser
+    width: 17rem
+    height: 6rem
+
+.user-block
+    background-color: #E5E5E5    
+    border-radius: 1.2rem
+    padding: .5rem 1.3rem
+    font-size: .8rem
+    margin-bottom: 1rem
+    overflow: hidden
+    opacity: .7
+
+.user-block label
+    color: black
+    width: 100%
+
+.input-block
+    box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.514)
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+
+.user-block input
+    background-color: transparent
+    border: none
+    outline: none
+    color: black
+    width: 90%
+    padding: .2rem
+
+::placeholder
+    color: black
+
+.user-input form input[type="submit"]
+    width: 100%
+    background-color:  #E5E5E5   
+    border: none
+    border-radius: 10px
+    color: black
+    font-size: .9rem
+    opacity: .7
+
+@media (max-width: 950px)
+    .user-img
+        display: none
+
+    .user-block input
+        width: 95%
+
+    .user-icon h1
+        text-align: center
+
+    .block-user-box
+        width: 90vw
+        padding: 3rem
+
+    .block-user
+        overflow: hidden
+        border-radius: 10px
+
+@media (max-width: 470px)
+    .user-block input
+        width: 90%
+
+@media (max-width: 325px)
+    .user-block label i
+        display: none
+
+// Register
+
+.bars-content span
+    background-color: rgba(61, 61, 61, 0.457)
+    width: .1rem
+    height: 12rem
+
+.content-flex
+    display: flex
+    align-items: center
+    background-color: #E5E5E5
+    padding: 2.5rem
+    margin-top: 2.5rem
+
+.content-flex div
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+
+.div-box-flex
+    display: flex
+    flex-direction: column
+
+.content-flex i
+    font-size: 5rem
+    opacity: .7
+
+.flexBlockRegister
+    display: flex
+    margin: 1rem
+    color: black
+    line-height: 1.5
+
+.flexBlockRegister h1, p
+    margin-bottom: 1rem
+    font-size: .8rem
+
+.flexBlockRegister h1
+    font-size: 1rem
+    font-weight: normal
+
+.block1Register
+    flex: 1
+    margin: 0 1rem
+    flex-direction: column
+    justify-content: center
+
+.chassi
+    width: 26rem
+
+.blockone .chassi
+    display: flex
+    justify-content: center
+
+.opacityImg
+    opacity: .7
+
+.block1Register .chassi
+    margin: 0 auto
+
+.infoId, label, h3
+    color: black
+
+.infoId 
+    
+    h3, input
+    color: black !important
+    font-weight: normal
+    opacity: .7
+    
+.fa-share
+    color: black
+    opacity: .7
+
+.infoId input
+    width: 100%
+    background-color: transparent
+    border: none
+    outline: none
+    color: black
+
+.buttonRegister
+    border: none
+    width: 100%
+    border-radius: 50rem
+    margin-top: 1rem
+    background-color: #E5E5E5
+    padding: .2rem
+
+.buttonRegister 
+
+    span, i
+        font-size: .9rem
+
+#name i
+    padding: .3rem
+    font-size: .8rem
+    color: black
+    opacity: .7
+
+#name
+    display: flex
+
+.infoId
+    background-color: #E5E5E5
+    flex: 1
+    padding: .5rem 1.3rem
+    border-radius: 1.2rem
+
+.infoId h3
+    font-size: .9rem
+    color: black
+
+::placeholder
+    color: black
+
+.information
+    display: flex
+    justify-content: space-between
+    gap: 1rem
+    margin-top: 1rem
+
+#formRegister div:nth-child(3)
+    margin-top: 1rem
+
+#formRegister div:nth-child(5)
+    margin-top: 1rem
+
+@media (max-width: 900px)
+    .flexBlockRegister
+        display: block
+    
+    .content-flex
+        margin-bottom: 1.5rem
+    
+
+@media (max-width: 700px)
+    .content-flex
+        display: block
+    
+    .content-flex i
+        font-size: 5rem
+    
+    .bars-content span
+        display: none
+
+@media (max-width: 600px)
+    .information
+        display: flex
+        flex-direction: column
+
+@media (max-width: 500px)
+    .chassi
+        width: 15rem
+
+@media (max-width: 300px)
+    .imgflex img
+        width: 15rem
+
+// Galeria
+
+
+// produtos southbike
+
+#models-info
+    background-color: #BEBEBE
+    display: flex
+    align-items: center
+    justify-content: space-around
+    color: white
+    margin-top: 2.5rem
+
+.barsModels
+    width: 1rem
+    height: 10rem
+    display: flex
+    align-items:center
+    justify-content: center
+
+.barsModels span
+    background-color: gray
+    width: .1px
+    height: 15rem
+    opacity: .5
+
+#models-info div
+    height: 22rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 1rem
+    margin-top: 2.5rem
+    margin-bottom: 2.5rem
+
+.logobicycle
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+.logobicycle img
+    opacity: .3
+
+.logobicycle i
+    position: absolute
+    font-size: 5rem
+    transform: rotate(-30deg)
+    opacity: .1
+    color: black
+
+.size
+    border: solid .1rem #0000007c
+    width: fit-content
+    padding: .5em
+    opacity: .6
+
+.boxModelsInfo p
+    font-size: .8rem
+    color: black
+    opacity: .6
+
+.boxModelsInfo span
+    font-size: .8rem
+    color: black
+    opacity: .6
+
+.models-box
+    margin-top: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+.models
+    padding: 1rem
+    width: 580px
+
+.card-models-box
+    padding: 1rem
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    background-color: rgba(128, 128, 128, 0.211)
+
+.models-bicycle-details
+    margin-bottom: 4rem
+    border-radius: 2px
+
+.models-bicycle-details div:nth-child(1) img
+    width: 40rem
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+
+.models-bicycle-details div:nth-child(1) img:hover
+    opacity: 1
+    cursor: pointer
+
+.card-models-box
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.card-models-box a
+    border-radius: 100px
+    border: 1px solid rgba(128, 128, 128, 0.971)
+    padding: .5rem 
+    color: black
+    opacity: .5
+
+.card-models div
+    background-color: #E4E4E4
+
+.card-models-box div:nth-child(1) div
+    margin-bottom: 1rem
+    transform: translateY(.5rem)
+
+.logosouthmodels
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+.logosouthmodels i
+    position: absolute
+    color: black
+    font-size: 4rem
+    transform: rotate(-25deg)
+    opacity: .1
+
+.logosouthmodels img
+    width: 15rem
+    opacity: .1
+
+.container-models
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    gap: 1rem
+
+.container-models div div
+    padding: .5rem
+    position: relative
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+
+.container-models div div p
+    position: absolute
+    top: 7px
+    right: 40px
+    color: black
+    opacity: .5
+    font-size: .7rem
+
+.container-models div img
+    width: 8rem
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+
+.container-models div img:hover
+    opacity: 1
+
+.circleColor
+    width: 1rem
+    height: 1rem
+    display: flex
+    border-radius: 100px
+
+.card-models
+    margin-bottom: 1rem
+    opacity: .5
+
+.card-models:hover
+   transform: scale(1.1)
+   cursor: pointer
+   opacity: 1
+
+.green
+    border: none !important
+    box-shadow: 0px 0px 10px rgb(44, 180, 65) !important
+    background-color: rgba(47, 161, 29, 0.567) !important
+
+.orange
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(180, 128, 44, 0.781) !important
+    background-color: rgba(180, 128, 44, 0.585) !important
+
+.blueBlack
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(0, 4, 255, 0.619) !important
+    background-color: rgba(0, 4, 255, 0.619) !important
+
+.blue
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(44, 178, 180, 0.781) !important
+    background-color: rgba(44, 180, 178, 0.619) !important
+
+.red
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(180, 44, 44, 0.781) !important
+    background-color: rgba(180, 44, 44, 0.628)  !important
+
+.black
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.781) !important
+    background-color: rgba(0, 0, 0, 0.628) !important
+
+.pink
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(251, 0, 255, 0.781) !important
+    background-color: rgba(251, 0, 255, 0.781) !important
+
+.purple
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(191, 0, 255, 0.603) !important
+    background-color: rgba(191, 0, 255, 0.603) !important
+
+.brown
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(166, 129, 95, 0.802) !important
+    background-color: rgba(166, 129, 95, 0.802) !important
+
+.purpleBlack
+    box-shadow: 0px 0px 10px rgba(99, 25, 124, 0.603)
+    background-color: rgba(99, 25, 124, 0.603)
+
+.white
+    box-shadow: 0px 0px 10px rgba(191, 191, 191, 0.603) !important
+    background-color: rgba(191, 191, 191, 0.603) !important
+    border: none !important
+
+.gray
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(135, 135, 135, 0.603) !important
+    background-color: rgba(135, 135, 135, 0.603) !important
+
+.orangered
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(210, 97, 27, 0.781) !important
+    background-color: rgba(210, 97, 27, 0.781) !important
+
+.yellow
+    border: none !important
+    box-shadow: 0px 0px 10px rgba(210, 207, 27, 0.781) !important
+    background-color: rgba(210, 207, 27, 0.781) !important
+
+.filterUrbans
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .filter div:nth-child(2) a
+        font-size: .8rem
+        padding: .2rem
+        border-radius: .2rem 
+        margin-bottom: 1rem
+        width: 100%
+
+    .filter div:nth-child(2)
+        padding-right: .2rem
+
+    .filter
+        display: flex
+        gap: 1rem
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin: 1rem
+        border: 1px solid #BEBEBE
+        border-radius: .3rem
+
+.iconFilter
+    background: #BEBEBE
+    padding: .4rem
+    color: #909294
+
+@media (max-width: 750px)
+    .barsModels span
+        display: none
+    
+    #models-info
+        display: flex
+        flex-direction: column
+    
+    #models-info div
+        height: 9rem
+    
+    .boxModelsInfo
+        transform: translateY(5.5rem)
+
+@media (max-width: 415px)
+    .logosouthmodels
+        display: none
+    
+    .gear
+        display: flex
+        gap: 5rem
+        
+        

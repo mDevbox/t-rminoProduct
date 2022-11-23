@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<!-- Linguagem -->
+<html lang="pt-br">
+
+<!-- Informações do site -->
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    {% include 'southbike/partials/head.html'%}
+</head>
+
+<!-- Corpo do website -->
+<body>
+    <main id="main-content-southbike">
+        {% block content %}
+            <!-- Content Block -->
+        {% endblock content %}
+    </main>
+</body>
+
+
+</html>

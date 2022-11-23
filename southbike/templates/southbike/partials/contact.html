@@ -1,0 +1,98 @@
+{% load static %}
+
+<section class="section-box-contact">
+    <section class="section-box">
+        <div  id="contact" class="block-contact">
+            <div class="address">
+                <div>
+                   <h1>Televendas</h1>
+                   <address>
+                        <p>Telefone: (51) 3077-3010</p>
+                        <p>Email: vendas@southbike.com.br</p>
+                   </address>
+                </div>
+                <div>
+                <i class="fa fa-cart-arrow-down"></i>
+                </div>
+            </div>
+            <div class="address">
+                <div>
+                    <h1>Atendimento</h1>
+                    <address>
+                        <p>Telefone: (51) 3077-3011</p>
+                        <p>Email: atendimento@southbike.com.br</p>
+                   </address>
+                </div>
+                <div>
+                    <i class="fas fa-headset"></i>
+                </div>
+            </div>
+            <div class="address">
+                <div>
+                    <h1>Garantias</h1>
+                    <p>Garantias, divergências ou falta de produtos, 
+                    entre em contato com seu representante ou canal de venda.</p>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Entrada de dados -->
+
+        <div class="block-input">
+             <form action="#" id="form-contact" method="GET">
+                <div class="form-flex">
+                    <p>Informe seus dados</p>
+                </div>
+                <div class="fullname">
+                    <p>Nome Completo</p>
+                    <label for="text" id="labelText">
+                        <input type="text" placeholder="Coloque seu nome: " class=""><i class="fa-solid fa-user"></i>
+                    </label>
+                 </div>
+                <div class="flex-contact">
+                    <div  class="flex-email-phone flex1">
+                    <p>Email</p>
+                    <label for="email" class="input-phone-email" id="labelText">
+                    <input type="email" placeholder="Coloque seu email: "><i class="fa-solid fa-envelope"></i>
+                    </label> 
+                    </div>
+                    <div  class="flex-email-phone flex2">
+                    <p>Telefone</p>
+                    <label for="phone" class="input-phone-email" id="labelText">
+                        <input type="phone" placeholder="Coloque seu telefone: "><i class="fa-solid fa-phone"></i>
+                    </label>
+                    </div>
+                </div>
+                 <div class="flex-radio">
+                    <label for="radio">
+                        <input type="radio" name="informação"> Dúvidas
+                    </label>
+                    <br>
+                    <label for="radio">
+                        <input type="radio" name="informação"> Garantias
+                    </label>
+                    <br>
+                    <label for="radio">
+                        <input type="radio" name="informação"> Vendas
+                    </label>
+                </div>
+                <div class="flex-Textarea">
+                    <p>Mensagem</p>
+                <textarea placeholder="Escreva sua mensagem:" style="resize: none;"></textarea>
+                 </div>
+            <button class='buttonContact'>Enviar <i class="fas fa-share"></i></button>
+            </form>
+        </div>
+
+        <div class="contact-banner">
+           <img src="{% static 'southbike/img/southbike.png' %}" alt="">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+
+    </section>
+</section>
